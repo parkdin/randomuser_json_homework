@@ -11,8 +11,8 @@ def read_json(filename:str) -> dict:
     """
 
     # Read the data from the file
-
+    f = open(filename).read()
     # Parse the JSON data
+    data = json.loads(f)
+    return data
 
-    return 0
-  
